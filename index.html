@@ -24,7 +24,7 @@
     <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#unban">Unban</a></li>
-        <li><a href="#" onclick="openRules()">Rules</a></li>
+        <li><a href="#rules">Rules</a></li>
         <li><a href="#report">Report</a></li>
         <li><a href="#about">About</a></li>
     </ul>
@@ -64,10 +64,17 @@
 
 <section id="rules" class="info-section animated">
     <div class="container">
-        <h2>COMMUNITY RULES (SUMMARY)</h2>
+        <h2>COMMUNITY RULES</h2>
+
+        <div class="button-container">
+            <a class="btn btn-secondary" target="_blank"
+               href="https://discord.com/channels/1465487509214462082/1465490339077820447">
+                VIEW FULL RULES
+            </a>
+        </div>
 
         <ol>
-            <li>Respect everyone</li>
+            <li>Respect all players</li>
             <li>No hate, slurs, or harassment</li>
             <li>No spam or trolling</li>
             <li>No NSFW content</li>
@@ -114,69 +121,6 @@
     <p>© 2026 GeeksSupport</p>
 </footer>
 
-<script>
-function openRules() {
-    const rulesWindow = window.open("", "_blank");
-
-    rulesWindow.document.write(`
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Geeks Community Rules</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
-<style>
-body {
-    font-family: 'Press Start 2P', cursive;
-    background: #0b0b0b;
-    color: white;
-    padding: 30px;
-    line-height: 1.8;
-}
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-ol {
-    max-width: 900px;
-    margin: auto;
-}
-li {
-    margin-bottom: 20px;
-}
-</style>
-</head>
-
-<body>
-
-<h1>Geeks Community Rules</h1>
-
-<ol>
-<li><b>Respect everyone</b><br>No harassment, hate, bullying, slurs, or explicit content.</li>
-<li><b>No spam or disruption</b><br>Don’t spam, troll, raid, or intentionally cause problems.</li>
-<li><b>Use the right channels</b><br>Keep conversations in their proper channels.</li>
-<li><b>Post responsibly</b><br>No private info, rumors, or unsafe material.</li>
-<li><b>No advertising</b><br>No self-promo or ads without staff approval.</li>
-<li><b>Appropriate profiles</b><br>Usernames and avatars must be clean.</li>
-<li><b>Listen to staff</b><br>Moderator and developer decisions are final.</li>
-<li><b>No exploiting rules</b><br>Avoiding or bending rules still counts.</li>
-<li><b>No soundboards</b><br>Soundboards = 60 second timeout.</li>
-<li><b>No sexual talk</b><br>No NSFW or sexual discussion.</li>
-<li><b>Let mods do their job</b><br>Don’t leave or joke during moderation.</li>
-<li><b>Don’t ping owners</b><br>They’re busy or offline.</li>
-<li><b>Don’t disrespect devs/owners</b><br>No backtalk or rude behavior.</li>
-</ol>
-
-</body>
-</html>
-    `);
-
-    rulesWindow.document.close();
-}
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
