@@ -1,0 +1,10 @@
+To create a favicon for your geekssupport.com website:
+
+1. Create a 16x16 or 32x32 pixel image with your desired icon
+2. Save it as favicon.ico in the root directory of your website
+3. Or use an online favicon generator like favicon.io
+4. Add the following line to your HTML head section:
+   <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+Alternatively, you can use a PNG format:
+<link rel="icon" type="image/png" href="/favicon.png">

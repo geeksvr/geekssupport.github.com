@@ -1,0 +1,163 @@
+:root {
+    --bg: #0b0b12;
+    --card: #161625;
+    --accent: #7cff6b;
+    --blue: #5aa9ff;
+    --danger: #ff5c5c;
+    --text: #f0f0ff;
+    --muted: #a0a0b5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Press Start 2P", monospace;
+    background: radial-gradient(circle at top, #1a1a33, var(--bg));
+    color: var(--text);
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(180deg, #20204a, #121222);
+    border-bottom: 4px solid var(--accent);
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+header p {
+    font-size: 0.65rem;
+    margin-top: 1rem;
+    color: var(--muted);
+}
+
+nav {
+    background: #0f0f1a;
+    border-bottom: 3px solid #2a2a55;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.65rem;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background: var(--accent);
+    color: #000;
+}
+
+.hero {
+    text-align: center;
+    background: linear-gradient(180deg, #191932, #12121f);
+    border-radius: 18px;
+    box-shadow: 0 8px 0 #000;
+}
+
+.hero h2 {
+    font-size: 1rem;
+    color: var(--blue);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 0.65rem;
+    color: var(--muted);
+}
+
+.info-section {
+    margin-top: 3rem;
+}
+
+.info-section .container {
+    background: var(--card);
+    border-radius: 18px;
+    box-shadow: 0 8px 0 #000;
+}
+
+.info-section h2 {
+    color: var(--accent);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+p, li {
+    font-size: 0.65rem;
+    color: var(--muted);
+}
+
+.button-container {
+    margin: 1.8rem 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    font-size: 0.65rem;
+    text-decoration: none;
+    box-shadow: 0 6px 0 #000;
+}
+
+.btn:hover {
+    transform: translateY(3px);
+    box-shadow: 0 3px 0 #000;
+}
+
+.btn-primary { background: var(--accent); color: #000; }
+.btn-secondary { background: var(--blue); color: #000; }
+.btn-danger { background: var(--danger); color: #000; }
+
+ul, ol {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+}
+
+li {
+    margin-bottom: 0.7rem;
+}
+
+footer {
+    margin-top: 4rem;
+    padding: 2rem;
+    text-align: center;
+    background: #0a0a12;
+    border-top: 3px solid #2a2a55;
+}
+
+footer p {
+    font-size: 0.6rem;
+    color: var(--muted);
+}
+
+.animated {
+    animation: floatIn 0.5s ease;
+}
+
+@keyframes floatIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
