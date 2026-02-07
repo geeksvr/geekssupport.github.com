@@ -1,4 +1,4 @@
-# GeeksSupport - Gorilla Tag VR Community Website
+# GeeksSupport - GeeksSupport.com
 
 Welcome to the GeeksSupport website for Gorilla Tag VR fan game enthusiasts! This website provides resources for unban appeals, community rules, and player reporting.
 
@@ -50,5 +50,6 @@ Feel free to customize the website to better suit your community's needs:
 This website is not affiliated with Another Axiom or Gorilla Tag. It is a fan-made community resource.
 
 ## Contact
+
 
 For issues or suggestions regarding this website template, please contact the developer.
